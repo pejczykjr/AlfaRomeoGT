@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alfa Romeo GT</title>
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+</head>
+
+<body style="background-color:lightgray">
+
+<p>Hej wszystkim. Jestem posiadaczem Alfy GT od około pół roku. W tym czasie starałem się doprowadzić auto do jak najlepszej kondycji. Starałem się poprawiać spieprzoną robotę poprzedników i fuszere pseudomechaników (niestety lekko się naciąłem, ale to nie szkodzi) - mowa tutaj o momencie, kiedy samochód opuścił Niemcy (do tego czasu wszystkie akcje serwisowe są w książeczce zrealizowane przez warsztaty), a potem ktoś kto się nie znał w Polsce grzebał przy samochodzie. Piękny samochód i zależy mi na nim, włożyłem już w nią całe serducho i walczę dalej. i mam zamiar podzielić się dotychczasową wiedzą dla potrzebujących.</p>
+
+<center><font style="color:hotpink">Dokładny model:<br>
+DISTINCTIVE MY 2006 Q2<br>
+1910 JTD 16V CF4 150CV/110KW</font></center>
+
+<p>Wymontowany EGR (została tylko chłodniczka) i DPF oraz wyprogramowane z ecu. Nr sterownika, kod silnika itd. też wrzucę przy najbliższej okazji.</p>
+
+<p>Aktualnie jestem w trakcie składania auta do kupy i robienia side questów. Będzie aktualizacja postów w miarę postępów. Linki do aukcji rzeczy, które nabyłem, będą w postaci hiperłączy (podświetlone zielone nazwy). Podam numery OE części (kolorem fioletowym), o których będę wspominał, żeby można było je łatwo znaleźć na schematach. Jeżeli w którymś punkcie nie ma wspomnianego OE to znaczy, że podałem go wcześniej jak opisywałem część albo nie dałem rady go znaleźć. Na czerwono będą wyróżnione elementy, gdzie proszę o pomoc/coś się nie udało/nie wiem jak coś zrobić. Część rzeczy zrobiłem szybciej i sprawdziłem poprawę zachowania samochodu, a część rzeczy wymagała kompleksowego serwisu przez co samochód jest unieruchomiony na dłuższy czas.</p>
+
+<p>Do diagnostyki kupiłem <a href="https://allegro.pl/oferta/fiat-alfa-romeo-lancia-multiecuscan-vag-kkl-obd2-11036263471" style="color:green;">vagkkl</a>, <a href="https://allegro.pl/oferta/elm-327-usb-adaptery-multiecuscan-fiat-alfa-can-12997557538" style="color:green;">elm327</a> (z kolorowymi przejściówkami).
+Korzystam z programu multiecuscan zdobytego z forum. Fabrycznych numerów części oraz konstrukcji jednostki szukałem na <a href="http://pekidi.com" style="color:green;">EPER</a>.</p>
+
+<p>Wyjaśnię od razu, że mam inny samochód do jeżdżenia, więc mogłem pozwolić sobie na projekt przy tym samochodzie. Moim marzeniem za dzieciaka było kupno Alfy GT. Nie miałem od początku zamiaru wciskać jej w ręce mechaników z czymkolwiek (będę skłonny jedynie wtedy, kiedy sam nie będę w stanie czegoś zrobić). Chciałem się trochę pobawić w mechanikę co wymagało ode mnie oczytania się schematów oraz forów, obejrzenia niejednego filmiku na temat samochodów i Alfy. Żeby ułatwić sobie pracę, miałem przygotowany zestaw niezbędnych narzędzi oraz dokupywałem w miarę potrzeby kolejne (robota i tak się zwróci za części, więc niczego nie żałuję). Do podniesienia samochodu kupiłem taki <a href="https://allegro.pl/oferta/podnosnik-samochodowy-niskoprofilowy-lewarek-zaba-3-5-t-tony-2-tloki-jakosc-13383179083" style="color:green;">podnośnik</a> (musiał być niskoprofilowy i z tego powodu wziąłem mocniejszy), a do utrzymania go w powietrzu następujące <a href="https://allegro.pl/oferta/podstawki-kobylki-warsztatowe-3t-z-blokada-verke-14033454572" style="color:green;">kobyłki</a>. Jako główna skrzynka narzędzi służy mi <a href="https://allegro.pl/oferta/klucze-nasadowe-neo-1-2-3-8-1-4-zestaw-219-szt-crv-10-076-14855752283" style="color:green;">ten</a>. Potrzebowałem jeszcze klucz dynamometryczny. Kupiłem dwa do śrub z gwintem lewym i prawym, pierwszy do <a href="https://dynamometryczne.pl/klucz-dynamometryczny-3834-20-100nm-l-p-jonnesway-p675" style="color:green;">mniejszego</a> momentu o rozmiarze 3/8", a drugi do <a href="https://dynamometryczne.pl/klucz-dynamometryczny-1234-40-200nm-l-p-jonnesway-p670" style="color:green;">większego</a> momentu o rozmiarze 1/2". Do czyszczenia nagaru i bardzo dużych zabrudzeń używałem tego <a href="https://allegro.pl/oferta/tenzi-brudex-5l-13570141133" style="color:green;">brudexa</a>, w odpowiedniej proporcji z wodą robi cuda. Praca przy samochodzie należy do tych brudnych (dosłownie), dlatego zalecam od razu zaopatrzyć się w coś do <a href="https://allegro.pl/oferta/k2-abra-pasta-do-rak-500-ml-14078273177" style="color:green;">czyszczenia</a> rąk.</p><hr>
+
+<h4><u>1. Niedogrzany silnik</u></h4>
+<u><i>Jak było?</i></u><br>
+Samochód grzał się bardzo, ale to bardzo długo i nie osiągał ustalonej temperatury 88°C +- 2°C. Była to raczej temperatura w okolicy 80°C. Spalanie było na nienormalnym jak dla tego samochodu poziomie.
+<br><u><i>Co zrobiłem?</i></u><br>
+Wymieniłem <a href="https://allegro.pl/oferta/vernet-th6882-88j-termostat-srodek-chlodzacy-12945817287" style="color:green;">termostat</a> <font style="color:blueviolet";>(OE 55202887)</font> w zestawie z uszczelką <font style="color:blueviolet;">(OE 14459681)</font> i czujnikiem <font style="color:blueviolet";>(OE 55188058)</font>. Najłatwiej jest do tego jest najpierw wyciągnąć akumulator, spuścić płyn chłodzący i odpiąć wszystkie rury dookoła termostatu, zdemontować wtyczkę od czujnika, a wtedy go odkręcić. Spuściłem płyn chłodzący przez rurę łączącą blok zamontowany do silnika a chłodnicę <font style="color:blueviolet";>(OE 46814855)</font>. Przez to, że nie wiedziałem jak spuścić płyn chłodniczy w całości (podczas opisanego wyżej zabiegu spuszczało się jakieś 3/4), spuszczałem co mogłem, zalewałem <a href="https://allegro.pl/oferta/prestone-plyn-do-plukania-chlodnic-250-ml-11982723668" style="color:green;">płukankę</a>, uzupełniałem <a href="https://allegro.pl/oferta/ma-professional-plyn-do-chlodnic-czerwony-5l-8121438050" style="color:green;">płynem</a> chłodniczym. Szybka przejażdżka i rozgrzanie silnika, powrót, odczekanie aż temperatura ostygnie i tak jeszcze 3 cykle.
+<br><u><i>Efekt końcowy?</i></u><br>
+Wypłukało się dużo syfu, też trochę rdzy. Płyn, który zlałem jako ostatni miał już kolor taki jak ten, którym zalewałem. Temperatura szybko rośnie do 90°C i trzyma się stabilnie - termostat działa. Spalanie spadło (o spalaniu też dalej będzie).
+
+<h4><u>2. Duże spalanie</u></h4>
+<u><i>Jak było?</i></u><br>
+Samochód bardzo dużo palił niezależnie od jazdy w mieście a na obwodnicy.
+<br><u><i>Co zrobiłem?</i></u><br>
+Wymiana termostatu (opisana wyżej). Postanowiłem wymienić <a href="https://allegro.pl/oferta/ufi-filtr-paliwa-alfa-romeo-156-1-9-2-4-jtd-11049020490" style="color:green;">filtr</a> paliwa <font style="color:blueviolet";>(OE 60699245)</font> na nowy. Zalałem układ paliwowy <a href="https://allegro.pl/oferta/ceramizer-cp-dodatek-uszlachetniacz-do-paliwa-10222681013" style="color:green;">ceramizerem</a> i <a href="https://allegro.pl/oferta/k2-diesel-go-dodatek-do-paliwa-myje-wtryski-250ml-11679937532" style="color:green;">środkiem</a> czyszczącym do wtryskiwaczy. W celu wyciągnięcia filtra paliwa można wyciągnąć filtr z obudową (ja tak zrobiłem) - przykręcony jest na dwie śruby. Trzeba wyciągnąć wtyczkę elektryczną z boku oraz upewnić się czy na dole nie mamy czujnika wody <font style="color:blueviolet";>(OE 77362667)</font> w filtrze paliwa (wtedy również stamtąd trzeba ją odłączyć). By uniknąć zapowietrzenia się układu paliwowego jest parę sposobów np. podczas ściągania węży przyczepionych do filtra paliwa można je zacisnąć szczypcami samozaciskowymi przy końcu i zalać nowy filtr paliwa do pełna. 
+<br><u><i>Efekt końcowy?</i></u><br>
+Samochód po operacji wymiany termostatu i filtra paliwa zmniejszył spalanie z 8l "na trasie" do 5l. Tak, brzmi to niedorzecznie, ale serio tak było. Niestety nie zastosowałem się do żadnej zasady z uważaniem na zapowietrzenie się układu paliwowego i zapowietrzył mi się.
+
+<h4><u>3. Zapowietrzony układ paliwowy</u></h4>
+<u><i>Jak było?</i></u><br>
+Zapowietrzenie układu paliwowego może powodować szereg nieprzyjemności takich jak: problem z pierwszym odpalaniem, nierówna praca silnika na biegu jałowym, spadki mocy, szarpanie. Po operacji wymiany filtra paliwa takie skutki u mnie wystąpiły (wcześniej ich nie było).
+<br><u><i>Co zrobiłem?</i></u><br>
+Zamontowałem  <a href="" style="color:green;">zaworek</a> zwrotny jednokierunkowy przed i za filtrem paliwa, by paliwo nigdy się nie cofało (wtedy nigdy nie będzie problemu z rozruchem). INFO GDZIE DOKŁADNIE I INFO O SREDNICACH
+
+Włączyłem zapłon kilka razy, by filtr paliwa się wypełnił. Następnie podpiąłem <a href="" style="color:green;">odsysarkę</a> do wyjścia filtra (od strony pompy CR) i zacząłem odsysać paliwo z widocznymi pęcherzykami powietrza aż nie zaczęło lecieć samo paliwo. Jeżeli nie rozwiąże to problemu to trzeba podpiąć odsysarkę do powrotu z listwy wtryskowej i odessać tam. 
+
+
+<br><u><i>Efekt końcowy?</i></u><br>
+Skutki zapowietrzenia układu zniknęły. Samochód dobrze pracuje.
+
+<h4><u>4. Zalana elektronika klapy gaszącej</u></h4>
+<u><i>Jak było?</i></u><br>
+Z ciekawości i wiedzy o istniejącym problemie, chciałem sprawdzić, czy u mnie również elektronika klapy gaszącej <font style="color:blueviolet";>(OE 55202662)</font> pływa w oleju. 
+<br><u><i>Co zrobiłem?</i></u><br>
+Dzieje się to chyba przez wadliwą konstrukcję i olej, który w minimalnych ilościach przedostając się rurami do dolotu kapie w dół klapy gaszącej. W celu zdemontowania klapy, trzeba ściągnąć z niej rurę idącą z intercoolera <font style="color:blueviolet";>(OE 50508080)</font>, wtyczkę oraz kilka śrub dookoła obudowy. Po wyciągnięciu ustrojstwa, żeby dostać się elektroniki, trzeba zdemontować pokrywę, która jest na metalowych klipsach do podważenia. Po otwarciu nie zdziwiłem się i wszystko dosłownie pływało w oleju (raczej nikt tam nie zaglądał więc przez kilka/naście lat mogło się nazbierać). Elektronika jest zabezpieczona więc nie trzeba się bać "porządnego mycia". Następnie odstawić do osuszenia się. Przy okazji warto wyczyścić sobie całą powierzchnię w środku obudowy, gdzie rusza się klapa (już nie mowa o elektronice). Warto również wyczyścić gniazdo dolotu kolektora ssącego (pomimo, że u mnie ktoś zaślepił egr, nie wyczyścił tego miejsca, a było mocno zapchane na krawędziach). Ja też dla spokoju przepłukałem sobie rurę od intercoolera. Po podanych czynnościach, przed zamontowaniem z powrotem klapy gaszącej, założyłem nową <a href="https://allegro.pl/oferta/uszczelka-przepustnica-fiat-alfa-romeo-lancia-1-9-jtd-oe-oryginal-15021856990" style="color:green;">uszczelkę</a> <font style="color:blueviolet";>(OE 55182685, tutaj pasuje też z opla)</font>.
+<br><u><i>Efekt końcowy?</i></u><br>
+Czyste sumienie, klapa gasząca, gniazdo dolotu i rura od intercoolera.
+
+<h4><u>5. Uszkodzone cięgno poziomowania ksenonów</u></h4>
+<u><i>Jak było?</i></u><br> 
+Cięgno wypadło, przegub nie trzymał się już na kulce.
+<br><u><i>Co zrobiłem?</i></u><br> 
+Niestety to jest już chyba niemożliwe dostać to cięgno oryginalne <font style="color:blueviolet";>(OE 60679378)</font> w normalnej cenie, więc musiałem szukać zamienników. Ja postanowiłem nabyć taki <a href="https://allegro.pl/oferta/lacznik-poziomowania-xenon-ciegno-uniwersalny-m6-11404958548" style="color:green;">zamiennik</a>. Rozmiar M6 się zgadza, ale niestety to z aukcji jest ciut za długie, przez co ma mały zakres pracy, ale robi robotę, jest dobrze wykonane. Żeby go wyciągnąć nie ma żadnej filozofii, dwie śruby i tyle, jest na wierzchu.
+<br><u><i>Efekt końcowy?</i></u><br> 
+Poziomowanie działa poprawnie.
+
+<h4><u>6. Profilaktyczny serwis pompy vacuum</u></h4>
+<u><i>Jak było?</i></u><br>
+Raczej wszystko w porządku.
+<br><u><i>Co zrobiłem?</i></u><br>
+Wyczyściłem pompę vacuum <font style="color:blueviolet";>(OE 55205445)</font> i wymieniłem <a href="https://allegro.pl/oferta/opel-vectra-astra-h-1-9-cdti-uszczelka-pompy-vacum-93179222-nowy-oryg-14834871018" style="color:green;">uszczelkę</a> <font style="color:blueviolet";>(OE 46818359, tutaj pasuje też z opla)</font>. Żeby dostać się do niej, trzeba odczepić wężyk podciśnienia oraz wykręcić kilka śrub od obudowy (są po skosie 4 chyba). Zalałem ją trochę olejem, żeby się nie zatarła po starcie silnika.
+<br><u><i>Efekt końcowy?</i></u><br>
+Raczej nic się nie zmieniło, czyste sumienie.
+
+<h4><u>7. Zapobiegawcza wymiana filtra powietrza, filtra oleju i oleju</u></h4>
+<u><i>Jak było?</i></u><br> 
+Raczej normalnie, wymieniłem podane elementy po zakupie samochodu, więc zrobiłem to dla spokojnej głowy.
+<br><u><i>Co zrobiłem?</i></u><br> 
+Przy wymianie oleju trzeba najpierw go spuścić przez korek oleju <font style="color:blueviolet";>(OE 46476967) </font> od spodu miski olejowej <font style="color:blueviolet";>(OE 73502147)</font>. Następnie odkręcamy <a href="https://allegro.pl/oferta/ufi-filtr-oleju-fiat-bravo-ii-doblo-stilo-1-9-jtd-9419174060" style="color:green;">filtr</a> oleju <font style="color:blueviolet";>(OE 71753742)</font> i zlewamy resztę. Ja postanowiłem wykonać profilaktycznie 2 płukanki silnika. Pierwsza na starym filtrze a druga na nowym. <a href="https://allegro.pl/oferta/febi-bilstein-korek-spustowy-oleju-37942-10876704462" style="color:green;">Korek</a> oleju wraz z uszczelką <font style="color:blueviolet";>(OE 55196309)</font> wymieniłem na nowy po skończeniu płukania silnika. Płukałem taką <a href="https://allegro.pl/oferta/plukanka-do-silnika-engine-oil-system-cleaner-11930773284" style="color:green;">płukanką</a>, na tanim, ale spełniającym normy 5w40 <a href="https://allegro.pl/oferta/olej-silnikowy-5w40-protect-qualitium-5l-13067912395" style="color:green;">olejem</a>. Docelowo zalałem <a href="https://allegro.pl/oferta/olej-silnikowy-syntetyczny-mannol-5w40-extreme-5l-12672264331" style="color:green;">Mannola</a> na nowym filtrze oleju i korku. Wymiana <a href="https://allegro.pl/moje-allegro/zakupy/kupione/64e9270b-7b92-3c9d-9396-f76f72c647e3/oferta/62927477-af4a-11ee-bd9b-454937a681d9" style="color:green;">filtra</a> powietrza <font style="color:blueviolet";>(OE 46794403)</font> polega na tym, że odkręcamy od dołu dwie śruby, by poluzować ramę na której opiera się obudowa filtra powietrza <font style="color:blueviolet";>(OE 46794400)</font>. Wtedy można bardziej rozszerzyć naszą obudowę, mamy więcej miejsca na wsadzenie nowego filtra. Żeby dostać się do środka obudowy trzeba ściągnąć dwa klipsy.
+<br><u><i>Efekt końcowy?</i></u><br> 
+Trzeba to było zrobić, wszystko jest okej.
+
+<h4><u>8. Przeładowanie turbiny</u></h4>
+<u><i>Jak było?</i></u><br>
+Robiłem test max prędkości. Wywaliło błąd przy 160km/h. Zrobiłem logi i wyszło, że turbina przeładowuje praktycznie w całym zakresie. Ilość dostarczanego powietrza i dawki paliwa poprawne. Było również słychać czasami przedmuchy/świsty przy normalnej jeździe.
+<br><u><i>Co zrobiłem?</i></u><br>
+Wymienione <a href="https://allegro.pl/oferta/bosch-czujnik-doladowania-0-281-006-028-12096406858" style="color:green;">czujnik</a> ciśnienia doładowania <font style="color:blueviolet";>(OE 55206797)</font> - jest umieszczony z tyłu na kolektorze, wystarczy wykręcić z niego śrubę i go wyciągnąć i wyczyścić, ale mój był tam od nowości w fatalnym stanie, trzeba uważać przy wyborze części, ponieważ pojawiała się wadliwa seria -  i <a href="https://allegro.pl/oferta/pierburg-zawor-turbosprezarki-7-00607-02-0-14886306190" style="color:green;">zawór</a> sterowania podciśnieniem turbiny <font style="color:blueviolet";>(OE 55203202)</font> na nowe - tu dla ułatwienia demontażu można odkręcić sobie przewód masy, który jest do demontażu przez nakrętkę. Czujnik podciśnienia turbiny przełożyłem na górę, ze względu na uwagi o jego częstych zabrudzeniach - na środku na górze jest element metalowy do montażu uchwytów kabli np. tego od sondy lambda, tam przykręciłem vgt. Wężyki podciśnienia wymienione na <a href="https://allegro.pl/oferta/przewod-podcisnienia-vacuum-zbrojony-3mm-fmic-czerwony-12729407617" style="color:green;">silikonowe</a> zbrojone (rozmiar 3mm zamiast OE 46814411, 4mm zamiast OE 46847277 i 8mm zamiast od pompy vacuum do trójnika, niestety OE nie znalazłem). Niektórzy pisali, że na siłę da się założyć 3mm na gruszkę, ale mi nie zależało. Przy zakładaniu 8mm polecam palcem nasmarować jakimś olejem trójnik i wąż w środku, bo się trzeba nieźle napocić. Wężyki podciśnienia raczej wymieniłem profilaktycznie i dla wyglądu.
+<br><u><i>Efekt końcowy?</i></u><br> 
+Przy 180km/h wywaliło błąd, na dynamicznych logach dalej to samo. Kolejna operacja to ściągnięty kolektor wydechowy <font style="color:blueviolet";>(OE 46790117)</font> z turbiną <font style="color:blueviolet";>(OE 55214063)</font>. Turbina po rozebraniu pokazała zmienną geometrię całą czarną, ledwo co się kierownice ruszały. Czytałem, że do demontażu turbiny najłatwiej jest wyciągnąć ją z kolektorem wydechowym, więc tak też zrobiłem. Oprócz tego, przed wyjęciem jej trzeba zdemontować dwie rury od filtra powietrza-turbo <font style="color:blueviolet";>(OE 46794405)</font> i intercooler-turbo <font style="color:blueviolet";>(OE 51709470) </font> oraz odkręcić wąż idący od chłodnicy egra <font style="color:blueviolet";>(OE 73500545)</font>. Celem wyciągnięcia dwóch części dołem, musiałem wymontować też katalizator <font style="color:blueviolet";>(OE 51800716)</font>, który trzymał się miski olejowej na dwóch śrubach, na trzech śrubach rury wydechowej i zacisku do turbiny. Niestety zorientowałem się też, że turbina nie wygląda okej i kupiłem <a href="https://allegro.pl/oferta/turbina-fiat-bravo-ii-stilo-1-9-jtd-150km-110kw-15927122525" style="color:green;">regenerowaną</a>. Regenerowana bez żadnych luzów, zmienna geometria chodzi luźno. Następnie nałożyłem nowe <a href="https://allegro.pl/oferta/elring-zestaw-montazowy-turbosprezarki-alfa-147-1-13908466398" style="color:green;">uszczelki</a> (bez zmieniania szpilek). Wszystkie szpilki kolektora wydechowego spsikałem <a href="https://allegro.pl/oferta/moje-auto-ceramic-lube-smar-ceramiczny-1400-c-10841916332" style="color:green;">smarem</a> ceramicznym odpornym na wysokie temperatury, żeby nie zardzewiały itd. <br>TO BE CONTINUED...
+
+<h4><u>9. Brudny katalizator</u></h4>
+<u><i>Jak było?</i></u><br>
+Jako że potrzebowałem go wyciągnąć (demontaż turbiny z kolektorem wydechowym), sprawdziłem w jakim jest stanie.
+<br><u><i>Co zrobiłem?</i></u><br>
+Kolektor w środku był cały, ale strasznie zapchany sadzą. Wziąłem go na myjkę ciśnieniową i przedmuchałem go tak jak to robią warsztaty. Brudu się wylewało a wylewało, syf okropny. W pewnym momencie brud ustał, więc wziąłem katalizator na suszenie i dałem mu trochę poleżeć. Podczas montażu użyłem nowej <a href="https://allegro.pl/oferta/fast-uszczelka-wydechu-fiat-14424918261" style="color:green;">uszczelki</a> od strony wydechu <font style="color:blueviolet";>(OE 46518052)</font> oraz nowej <a href="https://allegro.pl/oferta/fischer-uszczelka-rury-wydechowej-13714599064" style="color:green;">uszczelki</a> od strony turbiny <font style="color:blueviolet";>(OE 55202475)</font>.
+<br><u><i>Efekt końcowy?</i></u><br> 
+Katalizator czyściutki.
+
+<h4><u>10. Brudny intercooler</u></h4>
+<u><i>Jak było?</i></u><br>
+Tak jak w przypadku katalizatora był on brudny, ale w oleju.
+<br><u><i>Co zrobiłem?</i></u><br>
+Jako że większość części była łatwo dostępna i na wierzchu, postanowiłem, że intercooler <font style="color:blueviolet";>(OE 51715999)</font> też odkręcę i wyczyszczę. Tutaj, żeby się do niego dostać, trzeba ściągnąć zderzak przedni <font style="color:blueviolet";>(OE 71736447)</font>, ponieważ musimy najpierw zdemontować "kierownicę" nadmuchu powietrza na ic <font style="color:blueviolet";>(OE 60683313)</font> - takie plastikowe pudełko z dziurą. Oczywiście od intercoolera trzeba odłączyć dwie rury intercooler-turbo i intercooler-dolot. Jest on przykręcony z różnych stron, więc trzeba poszukać śrub dookoła. Na myjkę oprócz katalizatora wziąłem też intercooler w tym samym czasie. Również w jego przypadku wypluło się trochę syfu. Następnie go wysuszyłem i dałem mu trochę poleżeć.
+<br><u><i>Efekt końcowy?</i></u><br> 
+Czysty intercooler.
+
+<h4><u>11. Pordzewiały uchwyt na intercooler</u></h4>
+<u><i>Jak było?</i></u><br>
+Uchwyt, do którego zamontowany jest intercooler był cały w rdzy, popękany.
+<br><u><i>Co zrobiłem?</i></u><br>
+
+<br><u><i>Efekt końcowy?</i></u><br>
+Uchwyt jest zabezpieczony, ładnie wygląda i nie będzie rdzewieć przez długi długi czas.
+
+<h4><u>12. Profilaktyczne czyszczenie przepływomierza</u></h4>
+<u><i>Jak było?</i></u><br>
+Skoro miałem łatwy dostęp do przepływki <font style="color:blueviolet";>(OE 55183650)</font> przez odłączone orurowanie, postanowiłem ją wyciągnąć i wyczyścić.
+<br><u><i>Co zrobiłem?</i></u><br>
+Żeby wyciągnąć przepływkę, trzeba najpierw ściągnąć rurę filtra powietrza-turbo. Ja już miałem ten etap za sobą. Teraz należy odłączyć wtyczkę i odkręcić przepływkę przez dwie widoczne śruby. Jest to bardzo delikatny element, więc należy obchodzić się z nim jak z jajkiem. Ja spsikałem z bliska czujnik, który jest w środku takim <a href="https://allegro.pl/oferta/moje-auto-air-flow-sensor-cleaner-przeplywomierz-13022182449" style="color:green;">środkiem</a> do przepływomierzy.
+<br><u><i>Efekt końcowy?</i></u><br> 
+Przepływka czysta.
+
+<h4><u>13. Słyszalne przedmuchy</u></h4>
+<u><i>Jak było?</i></u><br>
+Podczas jazdy przy przyspieszaniu było słychać tak jakby uciekające powietrze. Temat nawiązujący do punktu 7.
+<br><u><i>Co zrobiłem?</i></u><br>
+Wykonałem ręczne planowanie kolektora wydechowego, papierem ściernym wodnym P80. Nalepiłem jedna obok drugiej taśmę dwustronną cienką do arkuszy i umieściłem je na idealnie płaskiej powierzchni. Ułożyłem kilka arkuszy obok siebie, polałem je wodą i jednostajnym ruchem przez około 10-15min z naciskiem na kolektor poruszałem nim po papierze ściernym. Wynikiem tego była płaska czysta powierzchnia. Kupiłem nową <a href="https://allegro.pl/oferta/victor-reinz-uszczelka-kolektora-wydechowego-71-35-12033835041" style="color:green;">uszczelkę</a> <font style="color:blueviolet";>(OE 73502761)</font> do niego. Przy demontażu rury filtr powietrza-turbo zauważyłem, że jest popękana przy końcu, więc musiałem ją wymienić na <a href="https://pl.aliexpress.com/item/1005006199230425.html?src=google&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=pl1005006199230425&ds_e_product_merchant_id=108898146&ds_e_product_country=PL&ds_e_product_language=pl&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19366866399&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gclid=Cj0KCQjwhb60BhClARIsABGGtw-A6s6PfV82-jZwHAdJaxdsihWejOgm1R4nMj0hA3pmBv5rL1g8OUcaAs4yEALw_wcB&aff_fcid=977b0d8298834fa993f64d28150d5173-1720707572382-01561-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=977b0d8298834fa993f64d28150d5173-1720707572382-01561-UneMJZVf&terminal_id=cd0478e29c1a4d288014b843eeaef38e&afSmartRedirect=n" style="color:green;">nową</a> nieoryginalną, bo ta mi pasowała do wężyków podciśnienia i jak przyszła okazało się, że jest całkiem dobrze wykonana. Poza wymienionymi operacjami wymyłem kolektor wydechowy, przejechałem go dookoła włosiem z metalu na wkrętarce, żeby zeszła rdza i syf. Wyczyściłem otwory w bloku silnika.
+<br><u><i>Efekt końcowy?</i></u><br> 
+TO BE CONTINUED...
+
+<h4><u>14. Cieknący separator oleju, ubrudzona odma i syf przy króćcu od rury filtr powietrza-turbo</u></h4>
+<u><i>Jak było?</i></u><br>
+Ciekło przez króciec separatora oleju <font style="color:blueviolet";>(OE 55217793)</font>, który luźno chodził góra dół, wszystko dookoła było ubrudzone olejem. Odma brudna dookoła, widać było liczne rysy i ślady jakby ktoś przy tym grzebał. Węże odma-separator i odma-rura filtr powietrza-turbo były śliskie od oleju. Króciec od rury filtr powietrza turbo był cały ufajdany olejem.
+<br><u><i>Co zrobiłem?</i></u><br>
+Wymieniony <a href="https://allegro.pl/oferta/separator-odma-oleju-opel-astra-zafira-vectra-1-9-70349667-15616487970" style="color:green;">separator</a> <font style="color:blueviolet";>(OE 55217793)</font> na taki bez króćca, używany od opla. Zakłada się ten sam wąż (wyciągnąć krócieć trzeba) i zaciska opaską. Pasuje idealnie, ale numery seryjne wam tego nie powiedzą. Niestety z montażem tego jest trochę roboty. Dużo ukrytych śrub. Najłatwiej jest odkręcić zbiorniczek podciśnienia <font style="color:blueviolet";>(OE 46845905)</font> i odkręcić obudowę <font style="color:blueviolet";>(OE 55220655)</font>, do której zamontowane są separator i zbiorniczek podciśnienia. Zanim jednak go wyciągniecie, trzeba od dołu zdemontować wąż, który idzie do miski olejowej <font style="color:blueviolet";>(OE 73501620)</font>. Wtedy na zewnątrz przykręcić separator i włożyć go na miejsce, zamontować resztę. Jeżeli chodzi o odmę <font style="color:blueviolet";>(OE 46817429)</font>, nie da się kupić jej jako pojedynczego elementu (teoretycznie), bo sprzedawana jest jako komplet z dwoma wężami (i tak trudne do dostania). Po chwili szukania w internecie znalazłem "zamiennik" od grupy VW z silnikiem 1.8l i mocą 150km. Jako, że parametry się mniej więcej pokrywają to można zamontować taką <a href="https://allegro.pl/oferta/separator-oleju-liftback-seat-13872408957" style="color:green;">odmę</a>. Jedyna różnica to delikatnie krótsze wyprowadzenie w dół. Wyczyściłem węże i wpiąłem je na odmę. Sprawę z cieknącym króćcem załatwia mi nowa rura filtr powietrza-turbo (wspomniane w punkcie 11).
+<br><u><i>Efekt końcowy?</i></u><br> 
+TO BE CONTINUED...<hr>
+
+<h4><u>W planach:</u></h4>
+<font style="color:red">13. Zapobiegawcza wymiana oleju skrzyni biegów (nie mogę zlokalizować od góry wlewu z miernikiem poziomu)</font><br>
+14. Wymiana wahaczy dolnych przód (na stacji diagnostycznej byłem i skrzypiało)<br>
+15. Wymiana drążków kierowniczych przód (to samo co wyżej)<br>
+<font style="color:red">16. Naprawa czujników parkowania (3 sekundy pipczy a potem cisza, tak, temat się przewijał, ciekawe czy w moim przypadku też jest to jeden wadliwy czujnik, który przerywa obwód)</font><br>
+17. Ściągniecie uszczelek drzwi, wypełnienie ich sznurem dylatacyjnym i posmarowaniem silikonowym smarem (lekkie podmuchy przez drzwi, wyrobione uszczelki)<br>
+18. Wymiana filtra kabinowego i odgrzybienie środkiem (profilaktycznie)<br>
+
+20. Czyszczenie wtryskiwaczy (myjka ultradźwiękowa)<br>
+21. Konserwacja podwozia<br>
+<font style="color:red">22. Ściągnięcie panelu w aucie i wyczyszczenie/wymiana czujnika temperatury (chłodzi tylko na najmniejszym ustawieniu, nie jestem pewny czy to wina czujnika)</font><br>
+23. Sprawdzenie wszystkich bezpieczników i przekaźników (profilaktycznie)<br>
+24. Wymiana wszystkich koniecznych żarówek (niektóre nie świecą)<br>
+<font style="color:red">25. Skrzeczenie pod kierownicą (jakiś ułamany plastik, ale tego nie wiem)</font><br>
+26. Wymiana emblematów przód tył (już są brzydkie, zmienie kolory)<br>
+27. Wymiana emblematów kół (to samo co wyżej)<br>
+<font style="color:red">28. mocowanie do lampy góra przód lewa (ułamany, są zestawy naprawcze, nie mogę znaleźć)</font><br>
+29. wymiana mocowania tablicy rejestracyjnej przod (na takie bezramkowe)<br>
+30.
+
+<h4><u>Porzucone plany</u></h4>
+<font style="color:red">19. Uszczelnienie pompy oleju, wyczyszczenie smoka / uszczelnienie skrzyni (nie da się dostać do dwóch śrub od miski, pod skrzynią, pewnie trzeba poluzować skrzynię)</font><br>
+
+</body>
+
+</html>
